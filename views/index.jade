@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Hi, #{title}, welcome to the form
+  form(action="/" method="post")
+    label(for="first") First name:
+      input(type="text" name="first" placeholder="First Name")
+    label(for="last") Last name:
+      input(type="text" name="last" placeholder="Last Name")
+    input(type="submit", value="Submit") 
